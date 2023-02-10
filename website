@@ -2,37 +2,92 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>saran</title>
+    <title>RESUME</title>
+    <link rel="stylesheet" href="css/styles.css">
   </head>
-  <body>
-  <h1>SARAN</h1>
-  <img src="
-https://c1.wallpaperflare.com/preview/566/703/673/people-man-guy-standing-alone-dark.jpg" alt="alone man story">
-  <p><em>An inspiration to <strong><<a href="
-    YouthLinks Community">youth</a></strong></em></p>
-  <br>
-  <br>
-  <p>His story started in india.as we all
-    know that his trusts has been used now on various developing countrues for their food ,education and shelter. his assets are growing rapidly,but he is with self estream a good donor
-    His story is being seling in the form of books which is now the bes seller at the market.His fights against the injustice were popular all over the world
-  many kids wants themselves to be him </p>
-  <hr color="green">
-  <h2>Education Tracks</h2>
-  <ul>
-    <li>schooling at <strong><a href="
-YouthLinks Community">AP</a></strong></li>
-    <li>sri chaitanya college in vijayawada</li>
-    <li>engineering at <strong><a href="
-YouthLinks Community">vignan</a></strong></li>
-  </ul>
-  <h3>hobbies</h3>
-  <ol>
-    <li>reading books</li>
-    <li>cleaning</li>
-    <li>exersing</li>
-    <li>traveling</li>
-    <table>
+  <body style="background-color:#C4D7E0;">
+    <center><h1 id=head>RESUME</h1>
+      <table border="5" cellspacing="18">
+        <tr>
+          <td><img src="http://myseedhospitality.com/wp-content/uploads/2018/01/passport-size-photo-male-233x300.jpg"></td>
+          <td><h2 id="head1">EDUCATION</h2>
+               <ul>
+                 <li>
+                 <?php
+                 $school=$_GET[("school")];
+                 echo $school;
+                 ?></li>
+                 <li><?php
+                 $inter=$_GET[("inter")];
+                 echo $inter;
+                 ?></li>
+                 <li><?php
+                 $college=$_GET[("college")];
+                 echo $college;
+                 ?></li>
+               </ui>
+        </tr>
+        <tr>
+          <td><h2 id="head2"><center>
+          <?php
+                 $name=$_GET[("name")];
+                 echo $name;
+                 ?>
+          </center></h2>
+          <td><h2 id="head3">CERTIFICATION AND SOFT SKILLS</h2>
+            <ul>
+              <li><?php
+                 $certificates=$_GET[("certificates")];
+                 echo $certificates;
+                 
+                 ?></li>
+              
+            </ul>
+        </tr>
+        <tr>
+          <td><h2 id="head4">prefered coding languages</h2>
+           <ul>
+             <li><?php
+                 $coding=$_GET[('coding')];
+                 echo $coding;
+                 ?></li>
+             
 
-    </table>
+           </ul>
+          <td><h2 id="head5">HARD SKILLS</h2>
+            <ul>
+              <li><?php
+                 $hardskills=$_GET[('hardskills')];
+                 echo $hardskills;
+                 ?></li>
+              
+            </ul>
+        </tr>
+        <tr>
+          <td><h2 id="head6">personal information</h2>
+           
+            <p><?php
+                 $email=$_GET[("email")];
+                 $phno=$_GET[("phno")];
+                 $cityname=$_GET[("cityname")];
+                 echo $email;
+                 echo "<br>";
+                 echo $phno;
+                 echo "<br>";
+                 echo $cityname;
+                 echo "<br>";
+
+                 ?></p>
+          <td><h3 id="head7">languages</h3>
+            <ul>
+              <li><?php
+                 $languages=$_GET[("language")];
+                 echo $languages;
+                 ?><li>
+              
+            </ul>
+        </tr>
+
+
   </body>
 </html>
