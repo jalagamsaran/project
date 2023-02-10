@@ -27,7 +27,7 @@
 
 
     <div class="container">
-    <form  action="res.html" method="get">
+    <form  action="404.html" method="get">
       <center>
       <label for="first">Enter your  name   :</label>
       <input type="text" name="name">
