@@ -24,7 +24,7 @@
 
 
     <div class="container">
-    <form  action="resume.php" method="get">
+    <form  action="" method="get">
       <center>
       <label for="first">Enter your  name   :</label>
       <input type="text" name="name">
