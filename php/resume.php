@@ -6,83 +6,6 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body style="background-color:#C4D7E0;">
-    <center>
-    <h1 id="head">RESUME BUILDER</h1>
-    <br>
-    <br>
-    </center>
-    <center>
-
-    <img class="pro" src="https://www.jobhero.com/resources/wp-content/uploads/2022/07/resume-builder-hero-banner-new.png" alt="resume">
-    </center>
-    <br>
-    <br>
-    <br>
-
-    
-
-
-
-    <div class="container">
-    <form  action="" method="get">
-      <center>
-      <label for="first">Enter your  name   :</label>
-      <input type="text" name="name">
-      <br>
-      
-      <br>
-      <lable>Enter your school name  :</lable>
-      <input type="text" name="school">
-      <br>
-      <br>
-      <lable>Enter your inter college name  :</lable>
-      <input type="text" name="inter">
-      <br>
-      <br>
-      <lable>Enter your engineering college name  :</lable>
-      <input type="text" name="college">
-      <br>
-      <br>
-      <lable>enter CERTIFICATION AND SOFT SKILLS  :</lable>
-      <textarea name="certificates" rows="5" cols="50">
-      </textarea>
-      <br>
-      <br>
-      <lable>enter prefered coding languages  :</lable>
-      <textarea name="coding" rows="5" cols="50">
-      </textarea>
-      <br>
-      <br>
-      <lable>enter HARD SKILLS  :</lable>
-      <input type="text" name="hardskills">
-      </textarea>
-      <br>
-      <br>
-      <lable>languages you speak  :</lable>
-      <textarea name="language" rows="5" cols="50">
-      </textarea>
-      <br>
-      <br>
-      <label for ="email">Enter your email id     :</label>
-      <input type="email" name="email">
-      <br>
-      <br>
-      <lable>Enter your phone number :</lable>
-      <input type="tel" name="phno">
-      <br>
-      <br>
-      <lable>Enter your city name:</lable>
-      <input type="text" name="cityname">
-      <br>
-      <br>
-
-      <br>
-      <br>
-      <input type="submit">
-      </center>
-
-    </form>
-    </div>
     <center><h1 id=head>RESUME</h1>
       <table border="5" cellspacing="18">
         <tr>
@@ -116,7 +39,7 @@
               <li><?php
                  $certificates=$_GET[("certificates")];
                  echo $certificates;
-                 echo "<br>";
+                 
                  ?></li>
               
             </ul>
