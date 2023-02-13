@@ -2,33 +2,173 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>form</title>
+    <title>project</title>
+    <link rel="stylesheet" href="css/project.css">
   </head>
-  <body>
-    <form class="" action="jalagamsaran@gmail.com" method="post">
-    <lable>enter ur name =</lable>
-    <input type="text">
+  <body style ="background-color:#FFDEDE;">
+
+
+
+    <center>
+    <h1 id="head">RESUME BUILDER</h1>
+    <br>
+    <br>
+    </center>
+    <center>
+
+    <img class="pro" src="https://www.jobhero.com/resources/wp-content/uploads/2022/07/resume-builder-hero-banner-new.png" alt="resume">
+    </center>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+    <div class="container">
+    <form  action="resume.php" method="get">
+      <center>
+      <label for="first">Enter your  name   :</label>
+      <input type="text" name="name">
       <br>
-    <lable>male</label>
-    <input type="checkbox">
-    <br>
-    <lable>female</lable>
-    <input type="checkbox">
-    <br>
-    <label>email id=</lable>
-    <input type="email">
-    <br>
-    <lable>date of birth=</lable>
-    <input type="date">
-    <br>
-    <lable>password</lable>
-    <input type="password">
-    <br>
-    <lable>your reveiw</lable>
-    <textarea class="" rows="9" cols="99"></textarea>
-    <br>
-    <input type="submit">
-  </form>
+
+      <br>
+      <lable>Enter your school name  :</lable>
+      <input type="text" name="school">
+      <br>
+      <br>
+      <lable>Enter your inter college name  :</lable>
+      <input type="text" name="inter">
+      <br>
+      <br>
+      <lable>Enter your engineering college name  :</lable>
+      <input type="text" name="college">
+      <br>
+      <br>
+      <lable>enter CERTIFICATION AND SOFT SKILLS  :</lable>
+      <textarea name="certificates" rows="5" cols="50">
+      </textarea>
+      <br>
+      <br>
+      <lable>enter prefered coding languages  :</lable>
+      <textarea name="coding" rows="5" cols="50">
+      </textarea>
+      <br>
+      <br>
+      <lable>enter HARD SKILLS  :</lable>
+      <input type="text" name="hardskills">
+      </textarea>
+      <br>
+      <br>
+      <lable>languages you speak  :</lable>
+      <textarea name="language" rows="5" cols="50">
+      </textarea>
+      <br>
+      <br>
+      <label for ="email">Enter your email id     :</label>
+      <input type="email" name="email">
+      <br>
+      <br>
+      <lable>Enter your phone number :</lable>
+      <input type="tel" name="phno">
+      <br>
+      <br>
+      <lable>Enter your city name:</lable>
+      <input type="text" name="cityname">
+      <br>
+      <br>
+
+      <br>
+      <br>
+      <input type="submit">
+      </center>
+
+    </form>
+    </div>
+
+    <center><h1 id=head>RESUME</h1>
+         <table border="5" cellspacing="18">
+           <tr>
+             <td><img src="http://myseedhospitality.com/wp-content/uploads/2018/01/passport-size-photo-male-233x300.jpg"></td>
+             <td><h2 id="head1">EDUCATION</h2>
+                  <ul>
+                    <li>
+                    <?php
+                    $school=$_GET[("school")];
+                    echo $school;
+                    ?></li>
+                    <li><?php
+                    $inter=$_GET[("inter")];
+                    echo $inter;
+                    ?></li>
+                    <li><?php
+                    $college=$_GET[("college")];
+                    echo $college;
+                    ?></li>
+                  </ui>
+           </tr>
+           <tr>
+             <td><h2 id="head2"><center>
+             <?php
+                    $name=$_GET[("name")];
+                    echo $name;
+                    ?>
+             </center></h2>
+             <td><h2 id="head3">CERTIFICATION AND SOFT SKILLS</h2>
+               <ul>
+                 <li><?php
+                    $certificates=$_GET[("certificates")];
+                    echo $certificates;
+
+                    ?></li>
+
+               </ul>
+           </tr>
+           <tr>
+             <td><h2 id="head4">prefered coding languages</h2>
+              <ul>
+                <li><?php
+                    $coding=$_GET[('coding')];
+                    echo $coding;
+                    ?></li>
+
+
+              </ul>
+             <td><h2 id="head5">HARD SKILLS</h2>
+               <ul>
+                 <li><?php
+                    $hardskills=$_GET[('hardskills')];
+                    echo $hardskills;
+                    ?></li>
+
+               </ul>
+           </tr>
+           <tr>
+             <td><h2 id="head6">personal information</h2>
+
+               <p><?php
+                    $email=$_GET[("email")];
+                    $phno=$_GET[("phno")];
+                    $cityname=$_GET[("cityname")];
+                    echo $email;
+                    echo "<br>";
+                    echo $phno;
+                    echo "<br>";
+                    echo $cityname;
+                    echo "<br>";
+
+                    ?></p>
+             <td><h3 id="head7">languages</h3>
+               <ul>
+                 <li><?php
+                    $languages=$_GET[("language")];
+                    echo $languages;
+                    ?><li>
+
+               </ul>
+           </tr>
 
   </body>
 </html>
+
