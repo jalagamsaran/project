@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>RESUME</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body style="background-color:#C4D7E0;">
+    <center><h1 id=head>RESUME</h1>
+      <table border="5" cellspacing="18">
+        <tr>
+          <td>
+            <img src="http://myseedhospitality.com/wp-content/uploads/2018/01/passport-size-photo-male-233x300.jpg"></td>
+          <td><h2 id="head1">PERSONAL DETAILS</h2>
+               <ul>
+                 <li>
+                 <?php
+                 $name=$_GET[("name")];
+                 echo $name;
+                 ?></li>
+                 <li><?php
+                 $objective=$_GET[("objective")];
+                 echo $objective;
+                 ?></li>
+                 <li><?php
+                 $dob=$_GET[("dob")];
+                 echo $dob;
+                 ?></li>
+               </ui>
+          </td>
+        </tr>
+        <tr>
+          <td><h2 id="head2">EDUCATION</h2>
+          <ul>
+                 <li>
+                 <?php
+                 $school=$_GET[("school")];
+                 $schgpa=$_GET[("schgpa")];
+                 echo $school," - ",$schgpa;
+                 ?>
+                 </li>
+                 <li>
+                 <?php
+                 $college=$_GET[("college")];
+                 $colgpa=$_GET[("colgpa")];
+                 echo $college," - ",$colgpa;
+                 ?>
+                 </li>
+                 <li>
+                 <?php
+                 $eng=$_GET[("eng")];
+                 $enggpa=$_GET[("enggpa")];
+                 echo $eng," - ",$enggpa;
+                 ?>
+                 </li>
+          </ui>
+         </td>
+               
+          
+          <td><h2 id="head3"> PROJECT</h2>
+            <ul>
+              <li>
+              <?php
+                 $miniproject=$_GET[("miniproject")];
+                 echo $miniproject;
+                 echo "<br>";
+
+                 ?>
+                 </li>
+                 <li>
+                 <?php
+                 $majorproject=$_GET[("majorproject")];
+                 echo $majorproject;
+                 
+                 ?></li>
+              
+            </ul>
+            </td>
+        </tr>
+        <tr>
+          <td><h2 id="head4">SKILLS</h2>
+           <ul>
+             <li>
+             <?php
+                 $pcoding=$_GET[('pcoding')];
+                 echo $pcoding;
+                 
+                 ?>
+                 </li>
+                 <li>
+              <?php
+                 $scoding=$_GET[('scoding')];
+                 echo $scoding;
+                 ?></li>
+                
+             
+
+           </ul>
+          </td>
+          <td><h2 id="head5">LANGUAGES SPOKEN </h2>
+            <ul>
+              <li>
+              <?php
+                 $flanguage=$_GET[('flanguage')];
+                 echo $flanguage;
+                 
+                 ?>
+                 </li>
+                 <li>                
+                <?php
+                $slanguage=$_GET[('slanguage')];
+                 echo $slanguage;
+                 ?></li>
+              
+            </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><h2>CERTIFICATES</h2>
+            <ul>
+                <li>
+                <?php
+                $certificates=$_GET[('certificates')];
+                 echo $certificates;
+                 ?>
+                <li>
+            </ul>
+
+            </td>
+            <td><h2>SOFTSKILLS</h2>
+                <ul>
+                    <li>
+                    <?php
+                $soft=$_GET[('soft')];
+                 echo $soft;
+                 ?>
+                    </li>
+                </ul>
+            </td>
+        <tr>
+          <td><h2 id="head6">contact information</h2>
+           
+            <p><?php
+                 $email=$_GET[("email")];
+                 $phno=$_GET[("phno")];
+                 $address=$_GET[("address")];
+                 $linkpro=$_GET[("linkpro")];
+                 $gitpro=$_GET[("gitpro")];
+                 echo $email;
+                 echo "<br>";
+                 echo $phno;
+                 echo "<br>";
+                 echo $address;
+                 echo "<br>";
+                 echo $linkpro;
+                 echo "<br>";
+                 echo $gitpro;
+                 echo "<br>";
+
+                 ?></p>
+            </td>
+          <td><h3 id="head7">HOBBIES</h3>
+            <ul>
+              <li><?php
+                 $hobbies=$_GET[("hobbies")];
+                 echo $hobbies;
+                 ?><li>
+              
+            </ul>
+            </td>
+        </tr>
+
+
+  </body>
+</html>
